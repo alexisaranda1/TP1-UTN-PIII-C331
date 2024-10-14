@@ -47,8 +47,20 @@ Además, agregue la siguiente información a su archivo `README`:
 - ¿Qué haría de manera diferente si se le asignara más tiempo?
   <br/>
   <br/>
+## Respuesta
 
-## Detalles
+Sí, algunas mejoras que puedo hacer incluyen:
+
+1. **Diseño responsive:** Actualmente, el diseño es básico, pero puedo optimizarlo para que se vea bien en dispositivos móviles y tablets.
+2. **Validación de formularios:** Implementar validación de campos de entrada del lado del cliente para mejorar la experiencia del usuario y asegurar la calidad de los datos ingresados.
+
+### ¿Qué haría de manera diferente si se le asignara más tiempo?
+
+Con más tiempo, me gustaría implementar lo siguiente:
+
+1. **Mejoras de diseño UI/UX:** Pasaría más tiempo mejorando el diseño visual y la experiencia de usuario con mejores transiciones y elementos visuales más atractivos.
+2. **Botones para compras y carrito de compras:** Agregaría botones para simular compras o añadir productos a un carrito, mejorando la interactividad del sitio.
+
 
 Necesitará construir las siguientes pagínas:
 <br/>
