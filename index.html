@@ -1,34 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Prueba - Programación 3</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="assets\logo.ico" type="image/x-icon">
+    <title>ElectroTech - Tu tienda de Electrónica</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
     <header>
-        <h1>Bienvenido a mi página de prueba</h1>
-    </header>
-
-    <main>
-        <section>
-            <h2>Sobre el proyecto</h2>
-            <p>Este es un proyecto de prueba para el parcial de Programación 3. Aquí se mostrarán algunos elementos básicos de HTML y CSS.</p>
-        </section>
-
-        <section>
-            <h2>Objetivos</h2>
+        <nav>
+            <div class="logo">ElectroTech</div>
             <ul>
-                <li>Entender cómo conectar un repositorio con una página web.</li>
-                <li>Implementar un diseño básico utilizando HTML y CSS.</li>
-                <li>Probar el despliegue del proyecto en un servidor.</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/signIn.html">SignIn</a></li>
+                <li><a href="pages/signUp.html">SignUp</a></li>
             </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <h1>Bienvenidos a ElectroTech</h1>
+            <p>Encuentra los mejores productos electrónicos y componentes para tu PC.</p>
         </section>
+
+
+        <section class="featured-products">
+            <h2 id="productos-destacados">Nuestros Productos Destacados</h2>
+            <!-- Carrusel de Productos con Cards -->
+            <div id="carouselProducts" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card text-center product-card">
+                            <img src="assets/PcAramdaRy5.jpg" class="card-img-top" alt="Pc Armada Gamer ">
+                            <div class="card-body">
+                                <h5 class="card-title">Pc Armada Gamer </h5>
+                                <p class="card-text">Amd Ryzen 5 4600g 8gb 240gb Ssd Kit.</p>
+                                <a href="#" class="btn btn-primary">Comprar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card text-center product-card">
+                            <img src="assets/Mouse_Gamer.jpg" class="card-img-top" alt="Mouse Gamer Logitech G502">
+                            <div class="card-body">
+                                <h5 class="card-title">Mouse Gamer Logitech G502</h5>
+                                <p class="card-text">Precisión y velocidad para tus sesiones de gaming.</p>
+                                <a href="#" class="btn btn-primary">Comprar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card text-center product-card">
+                            <img src="assets/monitor.jpg" class="card-img-top" alt="Monitor Gamer AOC 23.8">
+                            <div class="card-body">
+                                <h5 class="card-title">Monitor Gamer AOC 23.8"</h5>
+                                <p class="card-text">Pantalla Full HD con frecuencia de actualización de 144Hz.</p>
+                                <a href="#" class="btn btn-primary">Comprar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselProducts" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselProducts" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Nuestros productos!</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="assets/PcAramdaR7.jpg" alt="Producto 1">
+                    <h3>Pc Armada Gamer Ryzen 7 5700g 32gb Vega 8 960gb Wifi</h3>
+                    <p>$732.000</p>
+                </div>
+                <div class="product">
+                    <img src="assets/teclado.jpg" alt="Producto 2">
+                    <h3>Teclado Gamer Razer Blackwidow V4 X Yellow Switch Us Layout Color Del Teclado Negro</h3>
+                    <p>$154.900</p>
+                </div>
+                <div class="product">
+                    <img src="assets/Mouse_Gamer.jpg" alt="Producto 3">
+                    <h3>Logitech G Series Lightspeed G502 Negro</h3>
+                    <p>$143.999</p>
+                </div>
+                <div class="product">
+                    <img src="assets/monitor.jpg" alt="Producto 4">
+                    <h3>Monitor Gamer Aoc 23.8" Fhd G2490vx 144hz 1ms Amd Freesync Color Negro</h3>
+                    <p>$397.066</p>
+                </div>
+                <div class="product">
+                    <img src="assets/PcAramdaR5.jpg" alt="Producto 5">
+                    <h3>Pc Armada Gamer Ryzen 7 5700g 32gb Vega 8 960gb Wifi</h3>
+                    <p>$732.000</p>
+                </div>
+                <div class="product">
+                    <img src="assets/PcAramdaR7.jpg" alt="Producto 6">
+                    <h3>Pc Armada Gamer Ryzen 7 5700g 32gb Vega 8 960gb Wifi</h3>
+                    <p>$732.000</p>
+                </div>
+                <div class="product">
+                    <img src="assets/teclado.jpg" alt="Producto 7">
+                    <h3>Teclado Gamer Razer Blackwidow V4 X Yellow Switch Us Layout Color Del Teclado Negro</h3>
+                    <p>$154.900</p>
+                </div>
+                <div class="product">
+                    <img src="assets/Mouse_Gamer.jpg" alt="Producto 8">
+                    <h3>Logitech G Series Lightspeed G502 Negro</h3>
+                    <p>$143.999</p>
+                </div>
+                <div class="product">
+                    <img src="assets/monitor.jpg" alt="Producto 9">
+                    <h3>Monitor Gamer Aoc 23.8" Fhd G2490vx 144hz 1ms Amd Freesync Color Negro</h3>
+                    <p>$397.066</p>
+                </div>
+                <div class="product">
+                    <img src="assets/PcAramdaR5.jpg" alt="Producto 10">
+                    <h3>Pc Armada Gamer Ryzen 7 5700g 32gb Vega 8 960gb Wifi</h3>
+                    <p>$732.000</p>
+                </div>
+                <div class="product">
+                    <img src="assets/PcAramdaR7.jpg" alt="Producto 11">
+                    <h3>Pc Armada Gamer Ryzen 7 5700g 32gb Vega 8 960gb Wifi</h3>
+                    <p>$732.000</p>
+                </div>
+                <div class="product">
+                    <img src="assets/teclado.jpg" alt="Producto 12">
+                    <h3>Teclado Gamer Razer Blackwidow V4 X Yellow Switch Us Layout Color Del Teclado Negro</h3>
+                    <p>$154.900</p>
+                </div>
+                <div class="product">
+                    <img src="assets/Mouse_Gamer.jpg" alt="Producto 13">
+                    <h3>Logitech G Series Lightspeed G502 Negro</h3>
+                    <p>$143.999</p>
+                </div>
+                <div class="product">
+                    <img src="assets/monitor.jpg" alt="Producto 14">
+                    <h3>Monitor Gamer Aoc 23.8" Fhd G2490vx 144hz 1ms Amd Freesync Color Negro</h3>
+                    <p>$397.066</p>
+                </div>
+                <div class="product">
+                    <img src="assets/PcAramdaR5.jpg" alt="Producto 15">
+                    <h3>Pc Armada Gamer Ryzen 7 5700g 32gb Vega 8 960gb Wifi</h3>
+                    <p>$732.000</p>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <footer>
-        <p>&copy; 2024 Mi Proyecto de Programación 3</p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>Atención al Cliente</h5>
+                    <ul>
+                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Devoluciones y Cambios</a></li>
+                        <li><a href="#">Tarjetas de Regalo</a></li>
+                        <li><a href="#">Sobre ElectroTech Marketplace</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Cuenta</h5>
+                    <ul>
+                        <li><a href="#">Estado del Pedido</a></li>
+                        <li><a href="#">Gestionar Cuenta</a></li>
+                        <li><a href="#">Centro de Preferencias</a></li>
+                        <li><a href="#">Solicitud de Información Personal</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Servicios</h5>
+                    <ul>
+                        <li><a href="#">Geek Squad</a></li>
+                        <li><a href="#">Membresía ElectroTech</a></li>
+                        <li><a href="#">Suscripción Mensual</a></li>
+                        <li><a href="#">Financiamiento ElectroTech</a></li>
+                        <li><a href="#">Programa de Canje</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Sobre Nosotros</h5>
+                    <ul>
+                        <li><a href="#">Información Corporativa</a></li>
+                        <li><a href="#">Sala de Prensa</a></li>
+                        <li><a href="#">Nuestro Compromiso con el Medio Ambiente</a></li>
+                        <li><a href="#">Asóciate con ElectroTech</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-media">
+                <h5>Síguenos</h5>
+                <a href="#"><img src="assets/facebook.svg" alt="https://www.facebook.com/" width="24"></a>
+                <a href="#"><img src="assets/instagram.svg" alt="https://www.instagram.com/?hl=es" width="24"></a>
+                <a href="#"><img src="assets/linkedin.svg" alt="https://www.linkedin.com/login" width="24"></a>
+                <a href="#"><img src="assets/pinterest.svg" alt="https://ar.pinterest.com/" width="24"></a>
+                <a href="#"><img src="assets\youtube.svg" alt="https://www.youtube.com/" width="24"></a>
+            </div>
+            <p>© ElectroTech SRL. Microcentro, Buenos Aires, Argentina.</p>
+            <p><a href="#">Términos y Condiciones</a> | <a href="#">Políticas en Línea</a> | <a href="#">Política de
+                    Privacidad</a></p>
+        </div>
     </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.11/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
