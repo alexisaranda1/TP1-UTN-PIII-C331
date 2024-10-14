@@ -11,7 +11,7 @@ body {
     background-color: #ecf1f7 !important;
     color: #333;
 }
-
+/* Estilos generales */
 header {
     background-color: #0056b3;
     padding: 10px 0;
@@ -19,8 +19,8 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     max-width: 1200px;
     margin: auto;
     padding: 0 20px;
@@ -35,6 +35,9 @@ nav .logo {
 nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
 }
 
 nav ul li {
@@ -50,6 +53,44 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffcc00;
 }
+
+/* Estilos para menú hamburguesa en pantallas pequeñas */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    #menu-toggle:checked + .hamburger + ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
 
 main {
     max-width: 1200px;
@@ -212,13 +253,22 @@ main {
 }
 
 
+
+/* Responsividad para pantallas medianas */
 @media (max-width: 768px) {
     .product {
-        flex: 1 1 100%; 
+        flex: 1 1 calc(50% - 20px); /* Mostrar 2 productos por fila en pantallas medianas */
+        max-width: 100%;
     }
 }
 
+/* Responsividad para pantallas muy pequeñas (móviles) */
 @media (max-width: 480px) {
+    .product {
+        flex: 1 1 calc(50% - 20px); /* Mantener 2 productos por fila también en móviles pequeños */
+        max-width: 100%;
+    }
+
     .product h3 {
         font-size: 16px; 
     }
@@ -227,7 +277,6 @@ main {
         font-size: 14px; 
     }
 }
-
 
 /* Footer */
 footer {
