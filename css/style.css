@@ -11,7 +11,8 @@ body {
     background-color: #ecf1f7 !important;
     color: #333;
 }
-/* Estilos generales */
+
+
 header {
     background-color: #0056b3;
     padding: 10px 0;
@@ -19,25 +20,23 @@ header {
 
 .nav-container {
     display: flex;
-    justify-content: space-between; /* Espacio entre el logo/menu y la barra de búsqueda */
-    align-items: center; /* Centra verticalmente */
-    max-width: 1200px; /* O el ancho que prefieras */
-    margin: auto; /* Centra el contenedor en la página */
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: auto; 
 }
 
 nav {
-    display: flex; /* Mantiene el contenido del nav en línea */
-    align-items: center; /* Centra verticalmente el contenido del nav */
+    display: flex;
+    align-items: center; 
 }
-
-
-
 
 nav .logo {
     color: #fff;
     font-size: 24px;
     font-weight: bold;
 }
+
 
 nav ul {
     list-style: none;
@@ -60,54 +59,98 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffcc00;
 }
+
 #search-container {
     display: flex;
-    align-items: center; /* Centra verticalmente la barra de búsqueda */
-    justify-content: center; /* Centra horizontalmente el contenido */
-    margin-left: 20px; /* Espacio entre el menú y la barra de búsqueda */
-    flex: 1; /* Permite que el contenedor ocupe el espacio restante */
+    align-items: center; 
+    flex: 1; 
+    margin-left: 20px; 
 }
 
 #search-input {
-    padding: 10px; /* Espacio interior */
-    border: 1px solid #ddd; /* Borde claro */
-    border-radius: 4px; /* Esquinas redondeadas */
-    width: 300px; /* Ajusta el ancho según lo necesites */
-    max-width: 100%; /* Hace que no sobrepase el ancho del contenedor */
+    padding: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 4px 0 0 4px;
+    width: 100%; 
+    max-width: 400px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 #search-button {
-    padding: 10px 15px; /* Espacio interior del botón */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Esquinas redondeadas */
-    background-color: #FFD700; /* Color de fondo amarillo */
-    color: white; /* Color del texto */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón */
-    transition: background-color 0.3s; /* Transición suave para el hover */
-    margin-left: 10px; /* Espacio entre la barra de búsqueda y el botón */
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-left: none; 
+    border-radius: 0 4px 4px 0; 
+    background-color: #FFD700; 
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+#search-button img {
+    width: 20px;
+    height: 20px; 
 }
 
 #search-button:hover {
-    background-color: #FFC300; /* Color de fondo en hover */
+    background-color: #FFC107;
 }
 
-/* Responsividad */
+
 @media (max-width: 768px) {
     #search-container {
-        flex-direction: row; /* Mantiene la dirección en filas incluso en pantallas pequeñas */
-        align-items: center; /* Centra verticalmente */
-        margin: 10px 0; /* Espacio superior e inferior */
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 0;
     }
 
     #search-input {
-        width: 80%; /* Más ancho en pantallas pequeñas */
+        width: 80%; 
     }
+}
+.cart-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; 
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center; 
+    color: #070707; 
+    text-decoration: none; 
+    position: relative; 
+}
+
+.cart-icon img {
+    height: 24px; 
+    margin-right: 8px; 
+    transition: opacity 0.3s; 
+}
+
+.cart-icon img.cart-hover {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    opacity: 0; 
+}
+
+.cart-icon:hover img.cart-img {
+    opacity: 0; 
+}
+
+.cart-icon:hover img.cart-hover {
+    opacity: 1; 
+}
+
+.cart-icon:hover {
+    color: white; 
 }
 
 
-
-/* Estilos para menú hamburguesa en pantallas pequeñas */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -143,7 +186,6 @@ nav ul li a:hover {
         display: block;
     }
 }
-
 
 main {
     max-width: 1200px;
@@ -269,7 +311,7 @@ main {
 
 .products {
     display: flex;
-    justify-content: space-between; /* Cambié a space-between para un mejor espaciado */
+    justify-content: space-between; 
     flex-wrap: wrap;
 }
 
@@ -306,19 +348,16 @@ main {
 }
 
 
-
-/* Responsividad para pantallas medianas */
 @media (max-width: 768px) {
     .product {
-        flex: 1 1 calc(50% - 20px); /* Mostrar 2 productos por fila en pantallas medianas */
+        flex: 1 1 calc(50% - 20px); 
         max-width: 100%;
     }
 }
 
-/* Responsividad para pantallas muy pequeñas (móviles) */
 @media (max-width: 480px) {
     .product {
-        flex: 1 1 calc(50% - 20px); /* Mantener 2 productos por fila también en móviles pequeños */
+        flex: 1 1 calc(50% - 20px); 
         max-width: 100%;
     }
 
