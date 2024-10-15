@@ -17,14 +17,21 @@ header {
     padding: 10px 0;
 }
 
-nav {
+.nav-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
+    justify-content: space-between; /* Espacio entre el logo/menu y la barra de búsqueda */
+    align-items: center; /* Centra verticalmente */
+    max-width: 1200px; /* O el ancho que prefieras */
+    margin: auto; /* Centra el contenedor en la página */
 }
+
+nav {
+    display: flex; /* Mantiene el contenido del nav en línea */
+    align-items: center; /* Centra verticalmente el contenido del nav */
+}
+
+
+
 
 nav .logo {
     color: #fff;
@@ -53,6 +60,52 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffcc00;
 }
+#search-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente la barra de búsqueda */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    margin-left: 20px; /* Espacio entre el menú y la barra de búsqueda */
+    flex: 1; /* Permite que el contenedor ocupe el espacio restante */
+}
+
+#search-input {
+    padding: 10px; /* Espacio interior */
+    border: 1px solid #ddd; /* Borde claro */
+    border-radius: 4px; /* Esquinas redondeadas */
+    width: 300px; /* Ajusta el ancho según lo necesites */
+    max-width: 100%; /* Hace que no sobrepase el ancho del contenedor */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+#search-button {
+    padding: 10px 15px; /* Espacio interior del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Esquinas redondeadas */
+    background-color: #FFD700; /* Color de fondo amarillo */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+    margin-left: 10px; /* Espacio entre la barra de búsqueda y el botón */
+}
+
+#search-button:hover {
+    background-color: #FFC300; /* Color de fondo en hover */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #search-container {
+        flex-direction: row; /* Mantiene la dirección en filas incluso en pantallas pequeñas */
+        align-items: center; /* Centra verticalmente */
+        margin: 10px 0; /* Espacio superior e inferior */
+    }
+
+    #search-input {
+        width: 80%; /* Más ancho en pantallas pequeñas */
+    }
+}
+
+
 
 /* Estilos para menú hamburguesa en pantallas pequeñas */
 .hamburger {
