@@ -61,6 +61,11 @@ Con más tiempo, me gustaría implementar lo siguiente:
 1. **Mejoras de diseño UI/UX:** Pasaría más tiempo mejorando el diseño visual y la experiencia de usuario con mejores transiciones y elementos visuales más atractivos.
 2. **Botones para compras y carrito de compras:** Agregaría botones para simular compras o añadir productos a un carrito, mejorando la interactividad del sitio.
 
+### En su trabajo, ¿cuál considera que fue lo más difícil de realizar?
+Lo más complicado fue lograr que el diseño se adaptara bien a diferentes dispositivos. Me tomó tiempo ajustar la estructura para que se viera bien tanto en computadoras como en pantallas más pequeñas, y también asegurarme de que todos los elementos estuvieran bien alineados y fueran fáciles de leer.
+
+### ¿Podría decirnos en qué se inspiró para realizar su página web? ¿Utilizó alguna página existente como referencia?
+Me inspiré en Mercado Libre, aunque no seguí exactamente su diseño. Usé su estructura de navegación y algunos elementos visuales como referencia, pero el diseño y los colores los adapté según mi propio criterio para darle un estilo propio y ajustarlo a las necesidades de mi página.
 
 Necesitará construir las siguientes pagínas:
 <br/>
