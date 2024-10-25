@@ -4,6 +4,8 @@
 
 # Trabajo Práctico Parte 1 — HTML CSS
 
+### URL del Deploy: https://electrotechh.netlify.app/
+
 ## Objetivo
 
 El objetivo de este trabajo práctico es que los estudiantes demuestren sus habilidades con las herramientas que utilizarán en el desarrollo web. Está diseñado para evaluar sus capacidades en la creación de sitios web estáticos mediante HTML y CSS.
